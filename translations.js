@@ -87,8 +87,8 @@ const translations = {
       badge: "Leadership & Vision",
       title: "Architect Behind UMAY",
       name: "Sayidmurod Umaraliev",
-      role: "Founder, Computational Chemist & AI Systems Architect",
-      bio: "Undergraduate researcher and full-stack computational chemist with a focus on structural biology, biophysical algorithms, and deep-learning molecular generation. Combining deep domain biochemistry with high-performance software engineering to put Uzbekistan on the global biotechnology map.",
+      role: "Founder, Molecular Biologist, Genetic Engineer & Bioinformatician",
+      bio: "Molecular biologist, genetic engineer, and bioinformatician specializing in genomic target validation, structural interactomes, and autonomous biophysical algorithms. Combining deep molecular genetics and cellular biology with advanced bioinformatics pipelines to engineer next-generation therapeutics from Uzbekistan to the world.",
       location: "Tashkent, Uzbekistan / Zonguldak, Türkiye",
       btnContact: "Connect on LinkedIn / GitHub"
     },
@@ -198,8 +198,8 @@ const translations = {
       badge: "Liderlik ve Vizyon",
       title: "UMAY'ın Arkasındaki Mimar",
       name: "Sayidmurod Umaraliev",
-      role: "Kurucu, Hesaplamalı Kimyager & Yapay Zeka Sistem Mimarı",
-      bio: "Yapısal biyoloji, biyofiziksel algoritmalar ve derin öğrenme tabanlı moleküler üretim alanlarında uzmanlaşmış araştırmacı ve hesaplamalı kimyager. Derin biyokimya bilgisini yüksek performanslı yazılım mühendisliğiyle birleştirerek Özbekistan'ı dünya biyoteknoloji haritasına yerleştirmeyi hedeflemektedir.",
+      role: "Kurucu, Moleküler Biyolog, Genetik Mühendisi & Biyoinformatikçi",
+      bio: "Genomik hedef doğrulama, yapısal etkileşim ağları ve otonom biyofiziksel algoritmalar alanında uzmanlaşmış moleküler biyolog, genetik mühendisi ve biyoinformatikçi. Moleküler biyoloji ve genetik mühendisliğindeki derinliğini ileri düzey biyoinformatik boru hatlarıyla birleştirerek Özbekistan'dan dünyaya yeni nesil terapötikler geliştirmektedir.",
       location: "Taşkent, Özbekistan / Zonguldak, Türkiye",
       btnContact: "LinkedIn / GitHub Üzerinden İletişime Geçin"
     },
@@ -309,8 +309,8 @@ const translations = {
       badge: "Yetakchilik va Rivojlanish Rejasi",
       title: "UMAY Loyihasi Muallifi",
       name: "Sayidmurod Umaraliev",
-      role: "Asoschi, Hisoblash Kimyogari & SI Tizimlari Arxitektori",
-      bio: "Fazoviy biologiya, biofizik algoritmlar va chuqur o'rganishga asoslangan molekulyar dizayn sohalarida tadqiqot olib boruvchi hisoblash kimyogari. Fundamental biokimyo bilimlarini yuqori samarali dasturiy injiniring bilan birlashtirib, O'zbekistonni jahon biotexnologiya xaritasida yetakchi o'ringa olib chiqishni maqsad qilgan.",
+      role: "Asoschi, Molekulyar Biolog, Genetik Muhandis & Bioinformatikachi",
+      bio: "Genomik nishonlarni tekshirish, oqsil o'zaro ta'sir tarmoqlari va avtonom biofizik algoritmlar bo'yicha mutaxassis bo'lgan molekulyar biolog, genetik muhandis va bioinformatikachi. Molekulyar biologiya va genetik muhandislik sohasidagi fundamental bilimlarni ilg'or bioinformatik hisoblash tizimlari bilan birlashtirib, O'zbekistondan turib jahon miqyosidagi innovatsion dori vositalarini yaratishga hissa qo'shmoqda.",
       location: "Toshkent, O'zbekiston / Zonguldak, Turkiya",
       btnContact: "LinkedIn / GitHub Orqali Bog'lanish"
     },
