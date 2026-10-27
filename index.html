@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UMAY — Autonomous Drug Discovery & Biophysical Design Suite</title>
+  <meta name="description" content="UMAY unifies multi-omics target mapping, topological protein networks, 3D structural AI, and Bayesian multi-parameter optimization into an autonomous preclinical drug discovery engine.">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>">
+
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Interactive 3D Particle Canvas -->
+  <canvas id="canvas-bg"></canvas>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-link">
+        <div class="brand-logo-icon">U</div>
+        <div class="brand-text">
+          <span class="brand-title" data-i18n="nav.brand">UMAY</span>
+          <span class="brand-subtitle" data-i18n="nav.brandSub">Biotech AI Engine</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="#technology" data-i18n="nav.technology">Technology</a></li>
+          <li class="nav-item"><a href="#pipeline" data-i18n="nav.pipeline">8-Stage Pipeline</a></li>
+          <li class="nav-item"><a href="#simulator" data-i18n="nav.simulator">Live Simulator</a></li>
+          <li class="nav-item"><a href="#traction" data-i18n="nav.traction">Uz Combinator Pitch</a></li>
+          <li class="nav-item"><a href="#founder" data-i18n="nav.founder">Founder</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <div class="lang-selector">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="uz">UZ</button>
+          <button class="lang-btn" data-lang="tr">TR</button>
+        </div>
+
+        <a href="#simulator" class="btn btn-primary" data-i18n="nav.cta">Launch Engine</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="badge badge-glow">
+          <span class="pulse-dot"></span>
+          <span data-i18n="hero.badge">🚀 Uz Combinator 2026 Batch Candidate // Central Asia Deep-Tech</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="gradient-text" data-i18n="hero.title">Autonomous AI & Biophysical Engine for De Novo Therapeutics</span>
+        </h1>
+
+        <p class="hero-subtitle" data-i18n="hero.subtitle">
+          UMAY transforms drug discovery from an uncertain multi-year gamble into a deterministic, hours-long computational pipeline. From clinical disease phenotype to FDA-ready preclinical lead molecule in under 24 hours.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#pipeline" class="btn btn-primary" data-i18n="hero.btnPrimary">Explore 8-Stage Pipeline</a>
+          <a href="#simulator" class="btn btn-secondary" data-i18n="hero.btnSecondary">Interactive Discovery Demo</a>
+        </div>
+
+        <!-- Key Metrics Ribbon -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-value" data-i18n="hero.stat1Val">70%+</div>
+            <div class="stat-label" data-i18n="hero.stat1Lbl">Top-3 Accuracy across N=100 FDA Gold Standard Benchmarks</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" data-i18n="hero.stat2Val">10,000+</div>
+            <div class="stat-label" data-i18n="hero.stat2Lbl">De Novo Molecules Generated & Filtered per Target</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" data-i18n="hero.stat3Val">&lt; 1.0 Å</div>
+            <div class="stat-label" data-i18n="hero.stat3Lbl">Binding Pocket MD Stability (10ns RMSD Drift)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" data-i18n="hero.stat4Val">100x</div>
+            <div class="stat-label" data-i18n="hero.stat4Lbl">Speedup vs Traditional High-Throughput Screening</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8-Stage Pipeline Section -->
+    <section class="pipeline-section" id="pipeline">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge" data-i18n="pipeline.badge">Architectural Rigor</div>
+          <h2 class="section-title gradient-text" data-i18n="pipeline.title">End-to-End Autonomous Pipeline</h2>
+          <p class="section-subtitle" data-i18n="pipeline.subtitle">
+            A cascading 8-stage biophysical and genomic filter where non-viable, toxic, or synthetically intractable molecules fail early.
+          </p>
+        </div>
+
+        <div class="pipeline-grid">
+          <!-- Stage 1 -->
+          <div class="stage-card">
+            <div class="stage-num">01 // GENOMICS</div>
+            <h3 class="stage-title" data-i18n="pipeline.s1Title">1. Genetic Target Mapping</h3>
+            <p class="stage-desc" data-i18n="pipeline.s1Desc">Integrates Open Targets, DisGeNET & ClinVar with dual-layer SHA256 SQLite caching to score genetic confidence (S_gen).</p>
+            <span class="stage-tech-tag">Open Targets • ClinVar • DisGeNET</span>
+          </div>
+
+          <!-- Stage 2 -->
+          <div class="stage-card">
+            <div class="stage-num">02 // NETWORK BIOLOGY</div>
+            <h3 class="stage-title" data-i18n="pipeline.s2Title">2. Protein Network Biology</h3>
+            <p class="stage-desc" data-i18n="pipeline.s2Desc">Constructs STRING DB interactomes and runs NetworkX graph theory algorithms to detect bottleneck hub targets (S_net).</p>
+            <span class="stage-tech-tag">STRING DB • NetworkX Centrality</span>
+          </div>
+
+          <!-- Stage 3 -->
+          <div class="stage-card">
+            <div class="stage-num">03 // CLINICAL SAFETY</div>
+            <h3 class="stage-title" data-i18n="pipeline.s3Title">3. Tissue Safety & gnomAD</h3>
+            <p class="stage-desc" data-i18n="pipeline.s3Desc">Human Protein Atlas vital organ RNA expression filters penalize on-target cardiotoxicity, hepatotoxicity, and neurotoxicity.</p>
+            <span class="stage-tech-tag">HPA RNA-Seq • gnomAD pLI / LOEUF</span>
+          </div>
+
+          <!-- Stage 4 -->
+          <div class="stage-card">
+            <div class="stage-num">04 // 3D STRUCTURE</div>
+            <h3 class="stage-title" data-i18n="pipeline.s4Title">4. 3D Pocket & Structure AI</h3>
+            <p class="stage-desc" data-i18n="pipeline.s4Desc">Automates experimental RCSB PDB crystal structures + AlphaFold DB AI coordinates with cKDTree binding pocket detection.</p>
+            <span class="stage-tech-tag">RCSB PDB • AlphaFold DB • cKDTree</span>
+          </div>
+
+          <!-- Stage 5 -->
+          <div class="stage-card">
+            <div class="stage-num">05 // DECISION ENGINE</div>
+            <h3 class="stage-title" data-i18n="pipeline.s5Title">5. Autonomous Modality Brain</h3>
+            <p class="stage-desc" data-i18n="pipeline.s5Desc">Medical Paradox Shield classifies targets into Inhibitor, Activator (PAM), PROTAC degrader, or Gene Therapy without human bias.</p>
+            <span class="stage-tech-tag">Autonomous Router • Paradox Shield</span>
+          </div>
+
+          <!-- Stage 6 -->
+          <div class="stage-card">
+            <div class="stage-num">06 // DE NOVO DESIGN</div>
+            <h3 class="stage-title" data-i18n="pipeline.s6Title">6. Dual-Engine Molecular Design</h3>
+            <p class="stage-desc" data-i18n="pipeline.s6Desc">1,000+ FDA/ChEMBL BRICS fragments combined with 10,000 100% synthetically valid SELFIES GRU RNN generated candidate pool.</p>
+            <span class="stage-tech-tag">SELFIES GRU RNN • BRICS Fragments</span>
+          </div>
+
+          <!-- Stage 7 -->
+          <div class="stage-card">
+            <div class="stage-num">07 // ACTIVE LEARNING</div>
+            <h3 class="stage-title" data-i18n="pipeline.s7Title">7. Bayesian Active Learning</h3>
+            <p class="stage-desc" data-i18n="pipeline.s7Desc">Gaussian Process regression with Lower Confidence Bound (LCB) acquisition balancing exploration vs exploitation across 8D MPO.</p>
+            <span class="stage-tech-tag">GP Cholesky • LCB Acquisition • 8D MPO</span>
+          </div>
+
+          <!-- Stage 8 -->
+          <div class="stage-card">
+            <div class="stage-num">08 // BIOPHYSICS</div>
+            <h3 class="stage-title" data-i18n="pipeline.s8Title">8. Biophysical MD & PLIP Validation</h3>
+            <p class="stage-desc" data-i18n="pipeline.s8Desc">AutoDock Vina ensemble docking, 10ns molecular dynamics trajectory stability, and PLIP non-covalent interaction fingerprinting.</p>
+            <span class="stage-tech-tag">AutoDock Vina • 10ns MD • PLIP Profiler</span>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="docs/System_Architecture_EN.pdf" target="_blank" class="btn btn-secondary">
+            <span>📄</span>
+            <span>View Full Architecture Diagram (PDF)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Live Simulator Section -->
+    <section class="simulator-section" id="simulator">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge badge-glow" data-i18n="simulator.badge">Real-Time Demonstration</div>
+          <h2 class="section-title gradient-text" data-i18n="simulator.title">Interactive Target-to-Lead Simulator</h2>
+          <p class="section-subtitle" data-i18n="simulator.subtitle">
+            Choose an indication to see UMAY autonomously map the genomic target, select therapeutic modality, generate de novo candidates, and validate lead affinity.
+          </p>
+        </div>
+
+        <div class="simulator-terminal">
+          <div class="terminal-topbar">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="terminal-title">UMAY_KERNEL_v2.0 // AUTONOMOUS_SCREENING_AGENT</div>
+            <div class="pulse-dot"></div>
+          </div>
+
+          <div class="terminal-body">
+            <div class="sim-controls">
+              <div class="sim-select-wrapper">
+                <select id="indication-select" class="sim-select">
+                  <option value="ipf">Idiopathic Pulmonary Fibrosis (IPF)</option>
+                  <option value="t2d">Type 2 Diabetes Mellitus (T2D)</option>
+                  <option value="ad">Alzheimer's Disease (Neurodegeneration)</option>
+                  <option value="kras">KRAS-Driven Non-Small Cell Lung Cancer</option>
+                </select>
+              </div>
+              <button id="btn-run-sim" class="btn btn-primary" data-i18n="simulator.btnRun">Run Autonomous Screening</button>
+            </div>
+
+            <div class="sim-progress-box" id="sim-progress">
+              <div class="sim-progress-header">
+                <span id="sim-progress-text">✓ Pipeline Ready for Screening</span>
+                <span>100% COMPLETE</span>
+              </div>
+              <div class="sim-progress-bar-bg">
+                <div class="sim-progress-bar-fill" id="sim-bar-fill"></div>
+              </div>
+            </div>
+
+            <div class="sim-results-grid">
+              <div class="sim-result-card">
+                <div class="sim-res-label" data-i18n="simulator.targetLabel">Validated Genomic Target:</div>
+                <div class="sim-res-val" id="res-target">TGFB1 (Transforming Growth Factor Beta 1)</div>
+              </div>
+              <div class="sim-result-card">
+                <div class="sim-res-label" data-i18n="simulator.modalityLabel">Autonomous Modality:</div>
+                <div class="sim-res-val highlight" id="res-modality">INHIBITOR (Small Molecule Allosteric)</div>
+              </div>
+              <div class="sim-result-card">
+                <div class="sim-res-label" data-i18n="simulator.candidatesLabel">Candidates Evaluated:</div>
+                <div class="sim-res-val" id="res-candidates">10,000 SELFIES -> 3 Filtered Leads</div>
+              </div>
+              <div class="sim-result-card">
+                <div class="sim-res-label" data-i18n="simulator.bestLeadLabel">Top Preclinical Lead:</div>
+                <div class="sim-res-val highlight" id="res-lead">UMAY-IPF-091 (MW: 382.4 Da, Fsp3: 0.44)</div>
+              </div>
+              <div class="sim-result-card">
+                <div class="sim-res-label" data-i18n="simulator.affinityLabel">Docking Affinity (ΔG):</div>
+                <div class="sim-res-val" id="res-affinity">-10.8 kcal/mol (Kd ≈ 12 nM)</div>
+              </div>
+              <div class="sim-result-card">
+                <div class="sim-res-label" data-i18n="simulator.stabilityLabel">10ns MD Trajectory:</div>
+                <div class="sim-res-val" id="res-stability" style="color: var(--accent-emerald);">0.84 Å RMSD (&lt; 1.0 Å Highly Stable)</div>
+              </div>
+            </div>
+
+            <div class="dossier-callout">
+              <div class="dossier-callout-text">
+                <span style="font-size: 1.4rem;">📑</span>
+                <span data-i18n="simulator.dossierReady">Full 3-Page IND Candidate Dossier ready for regulatory submission.</span>
+              </div>
+              <button class="btn btn-secondary" data-open-modal data-i18n="simulator.btnDownloadDossier">Download Sample IND Dossier (PDF)</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Uz Combinator Pitch Section -->
+    <section class="pitch-section" id="traction">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge" data-i18n="pitch.badge">Uz Combinator 2026 Pitch</div>
+          <h2 class="section-title gradient-text" data-i18n="pitch.title">Why UMAY is Built to Win from Uzbekistan</h2>
+          <p class="section-subtitle" data-i18n="pitch.subtitle">
+            Transforming Central Asia into a high-margin deep-tech biotechnology hub by replacing wet-lab trial & error with algorithmic certainty.
+          </p>
+        </div>
+
+        <div class="pitch-grid">
+          <div class="pitch-card">
+            <div class="pitch-icon">🌍</div>
+            <h3 class="pitch-card-title" data-i18n="pitch.card1Title">$250B+ Global Market Urgency</h3>
+            <p class="pitch-card-desc" data-i18n="pitch.card1Desc">
+              Traditional pharmaceutical R&D spends $2.6 Billion and 12 years per approved drug, suffering an 88% clinical attrition rate. UMAY slashes candidate discovery time by 99% and eliminates false-positive leads before spending a single dollar in the wet lab.
+            </p>
+          </div>
+
+          <div class="pitch-card">
+            <div class="pitch-icon">🔒</div>
+            <h3 class="pitch-card-title" data-i18n="pitch.card2Title">Proprietary Offline-First Architecture</h3>
+            <p class="pitch-card-desc" data-i18n="pitch.card2Desc">
+              Engineered with zero cloud lock-in, deterministic SHA256 caching, local AlphaFold coordinates, and a zero-token-waste pipeline. IP and molecular candidate data never leak to third-party proprietary APIs.
+            </p>
+          </div>
+
+          <div class="pitch-card">
+            <div class="pitch-icon">⚡</div>
+            <h3 class="pitch-card-title" data-i18n="pitch.card3Title">The Uzbekistan Deep-Tech Advantage</h3>
+            <p class="pitch-card-desc" data-i18n="pitch.card3Desc">
+              Leveraging Tashkent IT Park zero-tax incentives, top-tier algorithmic talent, and unmatched capital efficiency. UMAY can execute biotech R&D at 1/15th the operational burn of Boston or San Francisco startups.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="founder-section" id="founder">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge" data-i18n="founder.badge">Leadership & Vision</div>
+          <h2 class="section-title gradient-text" data-i18n="founder.title">Architect Behind UMAY</h2>
+        </div>
+
+        <div class="founder-card">
+          <div class="founder-avatar-box">
+            <div class="founder-avatar-circle">
+              <div class="founder-initials">SU</div>
+            </div>
+            <div class="badge" style="font-size: 0.7rem;">Verified Founder</div>
+          </div>
+
+          <div class="founder-info">
+            <h3 class="founder-name" data-i18n="founder.name">Sayidmurod Umaraliev</h3>
+            <div class="founder-role" data-i18n="founder.role">Founder, Computational Chemist & AI Systems Architect</div>
+            <p class="founder-bio" data-i18n="founder.bio">
+              Undergraduate researcher and full-stack computational chemist with a focus on structural biology, biophysical algorithms, and deep-learning molecular generation. Combining deep domain biochemistry with high-performance software engineering to put Uzbekistan on the global biotechnology map.
+            </p>
+            <div class="founder-meta">
+              <span>📍 <strong data-i18n="founder.location">Tashkent, Uzbekistan / Zonguldak, Türkiye</strong></span>
+              <span>🎓 <strong>Computational Chemistry & Structural AI</strong></span>
+              <button class="btn btn-secondary" style="padding: 0.4rem 0.9rem; font-size: 0.8rem;" data-open-modal data-i18n="founder.btnContact">Contact Founder</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="cta-banner">
+      <div class="container">
+        <div class="cta-box">
+          <h2 class="cta-title gradient-text" data-i18n="ctaBanner.title">Ready to Accelerate Drug Discovery?</h2>
+          <p class="cta-desc" data-i18n="ctaBanner.desc">
+            UMAY is currently inviting academic partners, pharmaceutical research labs, and early-stage venture investors for pilot validation programs.
+          </p>
+          <div class="cta-buttons">
+            <button class="btn btn-primary" data-open-modal data-i18n="ctaBanner.btnDeck">Request Pitch Deck & IND Sample</button>
+            <button class="btn btn-secondary" data-open-modal data-i18n="ctaBanner.btnDemo">Schedule Uz Combinator Interview</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="brand-link">
+          <div class="brand-logo-icon">U</div>
+          <div class="brand-text">
+            <span class="brand-title">UMAY</span>
+            <span class="brand-subtitle">Biotech AI Platform</span>
+          </div>
+        </div>
+        <p style="max-width: 480px; font-size: 0.85rem;" data-i18n="footer.brandDesc">
+          UMAY — Unified Molecular Architecture & Yield Engine. Autonomous Drug Discovery & Biophysical Design Suite.
+        </p>
+        <div class="lang-selector">
+          <button class="lang-btn" data-lang="en">English</button>
+          <button class="lang-btn" data-lang="uz">O'zbekcha</button>
+          <button class="lang-btn" data-lang="tr">Türkçe</button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div data-i18n="footer.rights">© 2026 UMAY Platform. All rights reserved. Designed for Uz Combinator 2026 Batch.</div>
+        <div data-i18n="footer.builtFor">Built with scientific rigor in Uzbekistan & Türkiye.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Dialog for Request / Contact -->
+  <div class="modal-overlay" id="inquiry-modal">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modal-close">&times;</button>
+      <h3 class="modal-title gradient-text" data-i18n="modal.title">Request Investor Pitch Deck & Dossier</h3>
+      <p class="modal-subtitle" data-i18n="modal.subtitle">Get in touch directly with founder Sayidmurod Umaraliev.</p>
+
+      <form id="inquiry-form">
+        <div class="form-group">
+          <label class="form-label" data-i18n="modal.nameLabel">Your Name / Organization</label>
+          <input type="text" class="form-input" required placeholder="e.g. Uz Combinator / Partner">
+        </div>
+        <div class="form-group">
+          <label class="form-label" data-i18n="modal.emailLabel">Email Address</label>
+          <input type="email" class="form-input" required placeholder="you@example.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label" data-i18n="modal.roleLabel">Your Role</label>
+          <input type="text" class="form-input" placeholder="Investor, Researcher, Judge, Partner">
+        </div>
+        <div class="form-group">
+          <label class="form-label" data-i18n="modal.notesLabel">Message / Inquiry</label>
+          <textarea class="form-textarea" placeholder="Tell us about your interest in UMAY..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="modal.btnSubmit">Submit Request</button>
+      </form>
+
+      <div id="form-success" style="display: none; text-align: center; padding: 1.5rem 0;">
+        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🎉</div>
+        <h4 style="color: var(--accent-emerald); margin-bottom: 0.5rem;">Request Received!</h4>
+        <p style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="modal.successMsg">
+          Thank you! Your request has been logged. We will get back to you within 24 hours.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="translations.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
