@@ -65,6 +65,8 @@ const translations = {
       stabilityLabel: "10ns MD Trajectory:",
       dossierReady: "Full 3-Page IND Candidate Dossier ready for regulatory submission.",
       btnDownloadDossier: "Download Sample IND Dossier (PDF)",
+      ipNoticeTitle: "PROPRIETARY IP & AIR-GAPPED LOCAL PIPELINE NOTICE",
+      ipNoticeText: "This browser-based widget is an illustrative conceptual demonstration. The complete UMAY discovery suite and generative AI model weights execute exclusively in an offline, air-gapped local environment. Because UMAY generates high-potency, patent-eligible novel chemical entities (NCEs) and therapeutic leads, the core production algorithms and candidate structures remain strictly proprietary and will not be disclosed as open-source.",
       indications: {
         ipf: "Idiopathic Pulmonary Fibrosis (IPF)",
         t2d: "Type 2 Diabetes Mellitus (T2D)",
@@ -89,7 +91,7 @@ const translations = {
       name: "Sayidmurod Umaraliev",
       role: "Founder, Molecular Biologist, Genetic Engineer & Bioinformatician",
       bio: "Molecular biologist, genetic engineer, and bioinformatician specializing in genomic target validation, structural interactomes, and autonomous biophysical algorithms. Combining deep molecular genetics and cellular biology with advanced bioinformatics pipelines to engineer next-generation therapeutics from Uzbekistan to the world.",
-      location: "Tashkent, Uzbekistan / Zonguldak, Türkiye",
+      location: "Brno, Czech Republic / Tashkent, Uzbekistan",
       btnContact: "Connect on LinkedIn / GitHub"
     },
     ctaBanner: {
@@ -101,7 +103,7 @@ const translations = {
     footer: {
       brandDesc: "UMAY — Unified Molecular Architecture & Yield Engine. Autonomous Drug Discovery & Biophysical Design Suite.",
       rights: "All rights reserved. Designed for Uz Combinator 2026 Batch.",
-      builtFor: "Built with scientific rigor in Uzbekistan & Türkiye."
+      builtFor: "Built with scientific rigor in Brno, Czech Republic & Tashkent, Uzbekistan."
     },
     modal: {
       title: "Request Investor Pitch Deck & Dossier",
@@ -176,6 +178,8 @@ const translations = {
       stabilityLabel: "10ns MD Yörünge Kararlılığı:",
       dossierReady: "Eksiksiz 3 Sayfalık IND Preklinik Dosyası regülasyon sunumu için hazırlandı.",
       btnDownloadDossier: "Örnek IND Dosyasını İncele (PDF)",
+      ipNoticeTitle: "FİKRİ MÜLKİYET (IP) VE YEREL ÇALIŞMA GİZLİLİK BİLDİRİMİ",
+      ipNoticeText: "Bu web sayfası üzerindeki interaktif simülatör, metodolojiyi görselleştirmek amacıyla hazırlanmış bir demonstrasyondur. Gerçek UMAY ilaç tasarım motoru ve üretici yapay zeka ağırlıkları yalnızca yerel (local) ve internete kapalı (air-gapped) ortamlarda çalıştırılmaktadır. Sistemimizin yüksek bağlanma afinitesine sahip patentlenebilir yeni moleküler yapılar (NCE) üretme potansiyeli kritik düzeyde yüksek olduğundan, fikri mülkiyetin ve patent haklarının korunması amacıyla çekirdek algoritmalar internete açık kaynak olarak sunulmamaktadır.",
       indications: {
         ipf: "İdiyopatik Pulmoner Fibrozis (IPF)",
         t2d: "Tip 2 Diyabet (T2D)",
@@ -200,7 +204,7 @@ const translations = {
       name: "Sayidmurod Umaraliev",
       role: "Kurucu, Moleküler Biyolog, Genetik Mühendisi & Biyoinformatikçi",
       bio: "Genomik hedef doğrulama, yapısal etkileşim ağları ve otonom biyofiziksel algoritmalar alanında uzmanlaşmış moleküler biyolog, genetik mühendisi ve biyoinformatikçi. Moleküler biyoloji ve genetik mühendisliğindeki derinliğini ileri düzey biyoinformatik boru hatlarıyla birleştirerek Özbekistan'dan dünyaya yeni nesil terapötikler geliştirmektedir.",
-      location: "Taşkent, Özbekistan / Zonguldak, Türkiye",
+      location: "Brno, Çekya / Taşkent, Özbekistan",
       btnContact: "LinkedIn / GitHub Üzerinden İletişime Geçin"
     },
     ctaBanner: {
@@ -212,7 +216,7 @@ const translations = {
     footer: {
       brandDesc: "UMAY — Unified Molecular Architecture & Yield Engine. Otonom İlaç Keşif ve Biyofiziksel Tasarım Platformu.",
       rights: "Tüm hakları saklıdır. Uz Combinator 2026 Başvurusu için tasarlanmıştır.",
-      builtFor: "Özbekistan ve Türkiye'de bilimsel titizlikle geliştirilmiştir."
+      builtFor: "Brno, Çekya ve Taşkent, Özbekistan'da bilimsel titizlikle geliştirilmiştir."
     },
     modal: {
       title: "Yatırımcı Sunumu ve IND Dosyası Talebi",
@@ -287,6 +291,8 @@ const translations = {
       stabilityLabel: "10ns MD Trayektoriya Barqarorligi:",
       dossierReady: "To'liq 3 sahifalik IND Preklinik Hujjatlar to'plami xalqaro talablar asosida tayyorlandi.",
       btnDownloadDossier: "IND Hujjati Namunasini Ko'rish (PDF)",
+      ipNoticeTitle: "INTELLEKTUAL MULK (IP) VA MAHALLIY TIZIM XAVFSIZLIGI BILDIRISHNOMASI",
+      ipNoticeText: "Ushbu interaktiv simulyator metodologiyani tushuntirish uchun mo'ljallangan illyustrativ demo modeldir. Haqiqiy UMAY dori dizayni dvigateli va sun'iy intellekt og'irliklari faqatgina mahalliy (local), internetdan uzilgan xavfsiz muhitda ishlatiladi. Tizimimiz yuqori samaradorlikka ega va patentlanadigan yangi molekulalarni (NCE) kashf qilish salohiyati o'ta yuqori bo'lganligi sababli, intellektual mulk himoyasi va patent huquqlarini saqlash maqsadida asosiy hisoblash kodi internetga ochiq manba (open-source) sifatida chiqarilmaydi.",
       indications: {
         ipf: "Idiopatik O'pka Fibrozi (IPF)",
         t2d: "2-Tur Qandli Diabet (T2D)",
@@ -311,7 +317,7 @@ const translations = {
       name: "Sayidmurod Umaraliev",
       role: "Asoschi, Molekulyar Biolog, Genetik Muhandis & Bioinformatikachi",
       bio: "Genomik nishonlarni tekshirish, oqsil o'zaro ta'sir tarmoqlari va avtonom biofizik algoritmlar bo'yicha mutaxassis bo'lgan molekulyar biolog, genetik muhandis va bioinformatikachi. Molekulyar biologiya va genetik muhandislik sohasidagi fundamental bilimlarni ilg'or bioinformatik hisoblash tizimlari bilan birlashtirib, O'zbekistondan turib jahon miqyosidagi innovatsion dori vositalarini yaratishga hissa qo'shmoqda.",
-      location: "Toshkent, O'zbekiston / Zonguldak, Turkiya",
+      location: "Brno, Chexiya / Toshkent, O'zbekiston",
       btnContact: "LinkedIn / GitHub Orqali Bog'lanish"
     },
     ctaBanner: {
@@ -323,7 +329,7 @@ const translations = {
     footer: {
       brandDesc: "UMAY — Unified Molecular Architecture & Yield Engine. Avtonom Dori Kashfiyoti va Biofizik Dizayn Platformasi.",
       rights: "Barcha huquqlar himoyalangan. Uz Combinator 2026 qabuli uchun maxsus tayyorlandi.",
-      builtFor: "O'zbekiston va Turkiyada ilmiy aniqlik bilan yaratildi."
+      builtFor: "Brno, Chexiya va Toshkent, O'zbekistonda ilmiy aniqlik bilan yaratildi."
     },
     modal: {
       title: "Investor Taqdimoti va IND Hujjatini So'rash",
